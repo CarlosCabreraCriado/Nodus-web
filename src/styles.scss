@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fondo{
+    background-position: 0 0, 0 0;
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-image: radial-gradient(circle at 30% 0, #3a55ca29, #87a1ff00 38%), radial-gradient(circle at 0 0, #5b2eb685, #5d399200 56%);
+}
