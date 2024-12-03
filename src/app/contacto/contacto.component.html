@@ -4,20 +4,20 @@
   <div
     class="fondo w-screen min-h-screen justify-center items-center relative flex flex-col"
   >
-    <div class="h-40 text-al flex-col gap-8 top-6">
+    <div class=" text-al flex-col gap-8 top-6 real fade-in-imagen">
       <!---Logo y nombre-->
-      <img src="Logo_Nodo_Solo.png" class="m-auto h-32" />
-      <h1 class="decoration-double text-2xl font-black font-mono text-white">
+      <a routerLink="/inicio"><img src="Logo_Nodo_Solo.png" class="m-auto mt-3 h-32 " /></a>
+      <h1 class="decoration-double text-2xl font-black  text-white m-3 relative">
         Nodus Development
       </h1>
     </div>
     <div
-      class="w-[40rem] justify-start flex rounded-3xl p-8 text-xl relative gap-40 bg-opacity-5 bg-white"
+      class="w-[40rem] justify-start flex rounded-3xl p-8 text-xl  gap-40 bg-opacity-5 bg-white relative mb-20"
     >
       <!--formulario-->
-      <form class="flex-col flex gap-5 w-full">
+      <form class="flex-col flex gap-5 w-full ">
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"
+          <label class="text-2xl  font-bold text-white"
             ><!--formulario nombres-->
             Nombre*
           </label>
@@ -30,7 +30,7 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"
+          <label class="text-2xl  font-bold text-white"
             ><!--formulario nombres-->
             Apellidos*
           </label>
@@ -43,7 +43,7 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"
+          <label class="text-2xl  font-bold text-white"
             ><!--formulario nombres-->
             E-mail*
           </label>
@@ -56,7 +56,7 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative w-full">
-          <label class="text-2xl font-mono font-bold text-white"
+          <label class="text-2xl  font-bold text-white"
             ><!--formulario nombres-->
             Nombre de empresa*
           </label>
@@ -69,7 +69,7 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"
+          <label class="text-2xl  font-bold text-white"
             ><!--formulario nombres-->
             Telefono*
           </label>
@@ -82,21 +82,22 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold flex flex-wrap text-white"
+          <label class="text-2xl  font-bold flex flex-wrap text-white"
             ><!--formulario nombres-->
             ¿En qué podemos ayudarte?
           </label>
 
-          <input
+          <textarea
             class="h-10 relative rounded-xl bg-gray-300"
+            
             placeholder="Texto"
-          />
+          ></textarea>
 
           <button
             type="submit"
-            class="rounded-3xl font-mono font-bold text-white font"
+            class="boton_azul_centro mt-10"
           >
-            <u> Enviar formulario</u>
+            Enviar formulario
           </button>
         </div>
       </form>
