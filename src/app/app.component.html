@@ -1,85 +1,20 @@
-<body >
-  <section class="bg-zinc-900 w-screen "> <!--fondo toda la pantalla-->
-    
+<app-header></app-header>
 
-    <div class="fondo w-screen min-h-screen justify-center items-center relative flex flex-col">
-    <div class="h-40 text-al flex-col gap-8 top-6 "><!---Logo y nombre-->
-      <img src="Logo_Nodo_Solo.png" class="m-auto h-32"/>
-      <h1 class="decoration-double text-2xl font-black font-mono text-white">Nodus Development</h1>
-    </div>
-    <div class=" w-[40rem] justify-start flex rounded-3xl p-8 text-xl relative gap-40 bg-opacity-5 bg-white"><!--formulario-->
-      <form class="flex-col flex gap-5 w-full">
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"><!--formulario nombres-->
-            Nombre*
-          </label>
-          <input class="h-10 relative rounded-xl bg-gray-300" placeholder="Emilio" id="Nombre" required> <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"><!--formulario nombres-->
-            Apellidos*
-          </label>
-          <input class="h-10 relative rounded-xl bg-gray-300" placeholder="Diaz Tejera" id="Nombre" required> <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"><!--formulario nombres-->
-            E-mail*
-          </label>
-          <input class="h-10 relative rounded-xl bg-gray-300" placeholder="E-mai@gmail.com" id="Nombre" required> <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative w-full">
-          <label class="text-2xl font-mono font-bold text-white"><!--formulario nombres-->
-            Nombre de empresa*
-          </label>
-          <input class="h-10 w-full relative rounded-xl bg-gray-300" placeholder="Nodus Development" id="Nombre" required> <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold text-white"><!--formulario nombres-->
-            Telefono*
-          </label>
-          <input class="h-10 relative rounded-xl bg-gray-300" placeholder="+34 (634975689)" id="Nombre" required> <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl font-mono font-bold flex flex-wrap text-white"><!--formulario nombres-->
-            ¿En qué podemos ayudarte?
-          </label>
-         
-            <input class="h-10 relative rounded-xl bg-gray-300"  placeholder="Texto"  >
-
-          <button type="submit" class=" rounded-3xl font-mono font-bold text-white font"> <u> Enviar formulario</u> </button>
-         
-        </div>
-      </form>          
-    </div>    
-    </div>
-  </section>
-
-<footer class="bg-black w-auto h-auto  flex flex-row  items-center justify-around">
- <div class="flex flex-col relative items-center"><img class="relative  h-28 m-4" src="Logo_Nodo_Solo.png">
-  <div class="flex flex-row items-center gap-4"> 
-  <a target="_blank" href="https://www.youtube.com/">
-    <img class="rounded-full  h-12 filter invert mb-6" src="/instagram_black.png" alt=""><!--Falta poner los links bien-->
-  </a>
-  <a target="_blank" href="https://www.youtube.com/">
-    <img class="rounded-full  h-12 filter invert mb-6" src="/linkedin_black.png" alt=""><!--Falta poner los links bien-->
-  </a>
-  <a target="_blank" href="https://www.youtube.com/">
-    <img class="rounded-full  h-12 filter invert mb-6" src="/github_black.png" alt=""><!--Falta poner los links bien-->
-  </a>
-</div>
-</div>
-<!--division de footer-->
-<div class="flex flex-col gap-5">
-    <a class=" gap-5 relative flex flex-row font-mono font-bold text-xl text-white" href="mailto:carloscabreracriado@gmail.com"> <img class="h-9 filter invert " src="enviar-correo-negro.png"> Envianos un correo</a>
-    <a class=" gap-5 relative flex flex-row font-mono font-bold text-xl text-white" href="tel:+34690168013"> <img class="h-9 filter invert " src="telefono_black.png">Llamanos por telefono</a>
-
-</div>
-</footer>
-
-<main class="main">
-  <div class="content">
-  </div>
+<main class="relative w-full flex-1 flex flex-col">
+  <router-outlet></router-outlet>
 </main>
 
-<router-outlet />
-</body>
+<app-footer class="z-10"></app-footer>
+
+<!--
+<div
+  class="fixed bottom-0 right-0 z-50 bg-red-700 sm:bg-yellow-700 md:bg-purple-500 lg:bg-blue-700 xl:bg-green-700"
+>
+  <span class="text-white block sm:hidden">M</span>
+  <span class="text-white hidden sm:block md:hidden">SM</span>
+  <span class="text-white hidden md:block lg:hidden">MD</span>
+  <span class="text-white hidden lg:block xl:hidden">LG</span>
+  <span class="text-white hidden xl:block">XL</span>
+</div>
+-->
+
