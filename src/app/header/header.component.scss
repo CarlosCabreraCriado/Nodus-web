@@ -1,37 +1,111 @@
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .boton_azul_centro {
-    background: #4741d7; /* color de fondo */
-    color: #ffffff; /* color de fuente */
-    border: 2px solid #4741d7; /* tamaño y color de borde */
-    padding: 16px 20px;
-    border-radius: 3px; /* redondear bordes */
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
-  }
-  .boton_azul_centro:hover {
-    color: #050505;/* color de fuente hover */
-  }
-  .boton_azul_centro::after {
-    content: "";
-    background: #ffffff; /* color de fondo hover */
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.3s ease;
-  }
-  .boton_azul_centro:hover::after {
-    transition: all 0.3s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
-  }
+.botonHeader {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.botonHeader:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.botonHeader:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #c7c9d3;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.btn-header {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-header {
+  --primary-color: #f8f8f8;
+  --hovered-color: #d43af3;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-header p {
+  margin: 0;
+  
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.btn-header p:hover{
+color: var(--hovered-color);
+}
+.btn-header::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+.btn-Programa p::before{
+  content: "Programas";
+}
+.btn-Tecnologia p::before{
+  content: "Tecnologias";
+}
+.btn-Contacto p::before{
+  content: "Contacto";
+}
+.btn-header p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.btn-header:hover::after {
+  width: 100%;
+}
+
+.btn-header:hover p::before {
+  width: 100%;
+}
+
+
