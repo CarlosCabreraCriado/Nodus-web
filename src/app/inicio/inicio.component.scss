@@ -39,5 +39,18 @@
       }
       
   
-      
+.imagenGris{
+  img{
+    transition: 0.5s ease-in;
+    filter: grayscale(100%)
+  }      
+  img:hover{
+    filter: grayscale(0%)
+  }
+}
 
+.fondoDegradadoTarjetas{
+  background: #03032d;
+  background: -webkit-linear-gradient(0deg, #03032d 0%, #510a79 100%);
+  background: linear-gradient(0deg, #03032d 0%, #510a79 100%);
+}
