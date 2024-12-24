@@ -1,18 +1,31 @@
 
-<section class=" flex flex-row justify-center text-center h-20 fixed w-full   z-20 backdrop-blur  header">
+<section class=" flex flex-row justify-between sm:justify-center text-center h-20 fixed w-full   z-20 backdrop-blur  header">
 
-    <img class=" h-full justify-center items-center gap-10 p-2" src="Logo_Nodo_Solo.png" alt="">
+    <a href="#inicio"><img class=" max-h-full justify-center items-center gap-10 p-3 ml-5" src="Logo_Nodo_Solo.png" alt="" ></a>
 
 
-    <div class="w-full h-full justify-center align-middle gap-10 p-2 flex textoNormal">
+    <div class="w-full hidden sm:flex h-full justify-center align-middle gap-10 p-2 textoNormal">
 
-        <button  class=" btn-header h-full "><p>Programas</p></button>
-        <button  class=" btn-header h-full  "><p>Tecnologias</p></button>
-        <button  class=" btn-header h-full  "><p>Contacto</p></button>
+        <a href="#programas"><button  class="btn-header h-full "><p>Programas</p></button></a>
+        <a href="#tecnologias"><button  class=" btn-header h-full  "><p>Tecnologias</p></button></a>
+        <a href="#contacto"><button  class=" btn-header h-full  "><p>Contacto</p></button></a>
        
     </div>
-    <div class=" justify-center items-center gap-10 p-2">
-        <button  class=" btn-header h-full textoNormal "><p>Login</p></button>
+   
+    <div class=" hidden sm:flex justify-center items-center gap-10 p-2 mr-10">
+        <a routerLink="/login" ><button class=" btn-header h-full textoNormal "><p>Login</p></button></a>
     </div>
-  
+    <ul class="menu menu-horizontal px-1 textoNormal align-middle text-white text-lg mr-10 sm:hidden">
+        <li>  <a routerLink="/login" ><button class="align-middle flex  textoNormal "><p>Login</p></button></a></li>
+        <li>
+          <details>
+            <summary  >Menu</summary>
+            <ul class="bg-base-100 rounded-t-none p-2">
+              <li ><a href="#programas">Programas</a></li>
+              <li><a href="#tecnologias">Tecnologias</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
 </section>

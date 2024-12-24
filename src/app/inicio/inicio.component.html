@@ -1,15 +1,15 @@
-<section class="fondo bg-black h-screen justify-center flex items-center gap-6">
+<section class="fondo bg-black h-screen justify-center flex items-center gap-6" id="inicio">
     <img class="flex absolute h-screen" src="fondo_olas.svg">
    <div class="flex flex-col justify-center items-center gap-8">
     <a class="relative flex" routerLink="/login"><img class="m: h-40 sm:h-48 lg:h-auto md:h-60 relative flex m-5 fade-in-imagen"  src="Logo_Nodo_Solo.png"></a>
     <h1 class="text-white flex justify-center  text-3xl sm:text-4xl md:text-6xl z-10">NODUS DEVELOPMENT</h1>
-    <button (click)="scrollToMargin('contacto')" class=" boton_azul_centro">Contactanos</button>
+    <button (click)="scrollToSection('contacto')" class=" boton_azul_centro">Contactanos</button>
   </div> 
 
 </section>
-<div class="min-h-screen flex  items-center flex-col relative  text-center bg-black">
-    <h1 class="text-white text-4xl sm:text-5xl md:text-5xl  lg:text-6xl xl:text-7xl flex relative p-10">Servicios y programas que podemos ofrecer</h1>
-    <div class="text-white lg:w-9/12 lg:px-0 textoNormal flex relative w-full items-center justify-center text-center text-xl pb-10">Ofrecemos una variedad de servicios de desarrollo web personalizados diseñados para adaptarse a empresas de todos los tamaños. Ya sea que necesite un sitio web dinámico, una plataforma de comercio electrónico o una aplicación web personalizada, nuestro equipo de expertos ofrece soluciones seguras, escalables y de alta calidad.
+<div class="min-h-screen flex  items-center flex-col relative  text-center bg-black" id="programas">
+    <h1 class="text-white text-4xl sm:text-5xl md:text-5xl  lg:text-6xl xl:text-7xl flex relative p-10" >Servicios y programas que podemos ofrecer</h1>
+    <div class="text-white lg:w-9/12 lg:px-0 textoNormal flex relative w-full items-center justify-center text-center text-xl p-10">Ofrecemos una variedad de servicios de desarrollo web personalizados diseñados para adaptarse a empresas de todos los tamaños. Ya sea que necesite un sitio web dinámico, una plataforma de comercio electrónico o una aplicación web personalizada, nuestro equipo de expertos ofrece soluciones seguras, escalables y de alta calidad.
     </div>
 
    
@@ -94,7 +94,7 @@
 
 </div>
 
-<section #contacto class="flex flex-col w-full justify-center items-center mt-5 bg-black">
+<section #tecnologia class="flex flex-col w-full justify-center items-center mt-5 bg-black" id="tecnologias">
 <div class="colorNodus text-3xl md:text-6xl lg:text-8xl mt-5">
   Nuestras tecnologias
 </div>
@@ -113,30 +113,30 @@
  </div>
 
 <section class=" w-full bg-black">
- <div class=" text-white flex flex-col flex-wrap justify-center py-16 text-center gap-5 max-w-3xl mx-auto">
-  <div  >
+ <div class=" text-white flex flex-col flex-wrap justify-between py-16 text-center gap-10 max-w-6xl mx-auto px-10 ">
+  <div class="colorNodus text-3xl md:text-6xl lg:text-8xl mt-5" >
     Here's what our founders usually look like:
   </div>
 
-  <div class="loadingg"></div>
+  
 
-  <div class="flex flex-row flex-wrap justify-around  relative ">
-    <div class="flex flex-col justify-center gap-8 p-5 w-1/3 relative border border-zinc-800 rounded-2xl fondoDegradadoTarjetas ">
+  <div class="flex flex-row flex-wrap  justify-center gap-5 md:justify-between relative textoNormal ">
+    <div class="flex flex-col justify-center gap-8 p-5 w-3/4 sm:w-1/4 relative border border-zinc-800 rounded-2xl fondoDegradadoTarjetas ">
       <div class="flex h-1/5 justify-center "><img class=" " src="Logo_Nodo_Solo.png"></div>
       <div>You know the problem, you know the solution. You’re ready to prioritize what matters most.
 
       </div>
     </div>
 
-    <div class="flex flex-col justify-center gap-8 p-5 w-1/3 relative">
-      <div class="flex h-1/5 justify-center "><img src="Logo_Nodo_Solo.png"></div>
+    <div class="flex flex-col justify-center gap-8 p-5 w-3/4 sm:w-1/4 relative border border-zinc-800 rounded-2xl fondoDegradadoTarjetas ">
+      <div class="flex h-1/5 justify-center "><img class=" " src="Logo_Nodo_Solo.png"></div>
       <div>You know the problem, you know the solution. You’re ready to prioritize what matters most.
 
       </div>
     </div>
 
-    <div class="flex flex-col justify-center gap-8 p-5 w-1/3 relative">
-      <div class="flex h-1/5 justify-center "><img src="Logo_Nodo_Solo.png"></div>
+    <div class="flex flex-col justify-center gap-8 p-5 w-3/4 sm:w-1/4 relative border border-zinc-800 rounded-2xl fondoDegradadoTarjetas ">
+      <div class="flex h-1/5 justify-center "><img class=" " src="Logo_Nodo_Solo.png"></div>
       <div>You know the problem, you know the solution. You’re ready to prioritize what matters most.
 
       </div>
@@ -150,7 +150,7 @@
 
 
 
-<section class="flex justify-center bg-black overflow-hidden">
+<!--<section class="flex justify-center bg-black overflow-hidden">
 
   <div class="w-4/6 flex flex-row overflow-hidden bg-red-600">
   <div class="w-full flex flex-row  justify-between relative carrusel bg-white overflow-hidden">
@@ -167,6 +167,8 @@
   </div>
  
 </div>
-</section>
+</section>-->
 
-<app-contacto ></app-contacto>
+<section #contacto>
+  <app-contacto id="contacto"></app-contacto>
+</section>

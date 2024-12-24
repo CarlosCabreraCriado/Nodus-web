@@ -1,4 +1,4 @@
-<section class="bg-zinc-900 w-screen">
+<section class="bg-zinc-900 w-screen textoNormal">
   <!--fondo toda la pantalla-->
 
   <div
@@ -12,69 +12,47 @@
       </h1>
     </div>
     <div
-      class="w-[40rem] max-w-full justify-start flex rounded-3xl p-8 text-xl  gap-40 bg-opacity-5 bg-white relative mb-20"
+      class="sm:w-[40rem] sm:max-w-full w-10/12 justify-start flex rounded-3xl p-8 text-xl  sm:gap-40 bg-opacity-5 bg-white relative mb-20 "
     >
       <!--formulario-->
-      <form class="flex-col flex gap-5 w-full ">
+      <form class="flex-col flex gap-2 w-full ">
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl  font-bold text-white"
+          <label class="text-xl   text-white"
             ><!--formulario nombres-->
-            Nombre*
+            Nombre y apellidos*
           </label>
           <input
-            class="h-10 relative rounded-xl bg-gray-300 font-mono p-2"
-            placeholder="Emilio"
+            class="h-10 relative rounded-xl bg-gray-300 textoNormal p-2"
+            placeholder="Emilio Diaz Tejera"
             id="Nombre"
             required
           />
           <!--barra para ponre nombres-->
-        </div>
-        <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl  font-bold text-white"
-            ><!--formulario nombres-->
-            Apellidos*
-          </label>
-          <input
-            class="h-10 relative rounded-xl bg-gray-300 font-mono p-2"
-            placeholder="Diaz Tejera"
-            id="Nombre"
-            required
-          />
+       
+      
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl  font-bold text-white"
+          <label class="text-xl   text-white"
             ><!--formulario nombres-->
             E-mail*
           </label>
           <input
-            class="h-10 relative rounded-xl bg-gray-300 font-mono p-2"
+            class="h-10 relative rounded-xl bg-gray-300 textoNormal p-2"
             placeholder="E-mai@gmail.com"
             id="Nombre"
             required
           />
           <!--barra para ponre nombres-->
         </div>
-        <div class="flex-col flex gap-2 relative w-full">
-          <label class="text-2xl  font-bold text-white"
-            ><!--formulario nombres-->
-            Nombre de empresa*
-          </label>
-          <input
-            class="h-10 w-full relative rounded-xl bg-gray-300 font-mono p-2"
-            placeholder="Nodus Development"
-            id="Nombre"
-            required
-          />
-          <!--barra para ponre nombres-->
-        </div>
+        
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl  font-bold text-white"
+          <label class="text-xl   text-white"
             ><!--formulario nombres-->
             Telefono*
           </label>
           <input
-            class="h-10 relative rounded-xl bg-gray-300 font-mono p-2 " font-mono
+            class="h-10 relative rounded-xl bg-gray-300 textoNormal p-2 " font-mono
             placeholder="+34 (634975689)"
             id="Nombre"
             required
@@ -82,20 +60,20 @@
           <!--barra para ponre nombres-->
         </div>
         <div class="flex-col flex gap-2 relative">
-          <label class="text-2xl  font-bold flex flex-wrap text-white"
+          <label class="text-xl   flex flex-wrap text-white"
             ><!--formulario nombres-->
             ¿En qué podemos ayudarte?
           </label>
 
           <textarea
-            class="h-40 relative rounded-xl bg-gray-300 font-mono p-2"
+            class="h-40 relative rounded-xl bg-gray-300 textoNormal p-2"
             
             placeholder="Texto"
           ></textarea>
 
           <button
             type="submit"
-            class="boton_azul_centro mt-10"
+            class="boton_azul_centro mt-4"
           >
             Enviar formulario
           </button>
